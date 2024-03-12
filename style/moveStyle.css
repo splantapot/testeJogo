@@ -1,0 +1,33 @@
+.select {
+    border: 2px solid red;
+    animation-name: borderRD;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+.select::before {
+    z-index: 10;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px dashed cyan;
+    animation-name: borderDR;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderRD {
+    0% {border-color: red;}
+    50% {border-color: cyan;}
+    100% {border-color: red;}
+}
+
+@keyframes borderDR {
+    0% {border-color: cyan;}
+    50% {border-color: red;}
+    100% {border-color: cyan;}
+}
