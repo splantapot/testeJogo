@@ -31,3 +31,7 @@
     50% {border-color: red;}
     100% {border-color: cyan;}
 }
+
+.hasCard {
+    border: 2px dotted black;
+}
